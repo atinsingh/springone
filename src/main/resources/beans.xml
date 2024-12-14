@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="termInsurance" class="co.pragra.learning.first_spring_proj.dec14.domain.TermInsurance"></bean>
+    <bean name="autoInsurance" class="co.pragra.learning.first_spring_proj.dec14.domain.AutoInsurance"></bean>
+    <bean name="insuranceService" class="co.pragra.learning.first_spring_proj.dec14.service.BaseInsuranceService">
+        <constructor-arg name="insurance" ref="termInsurance"></constructor-arg>
+    </bean>
+</beans>
