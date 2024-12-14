@@ -5,7 +5,15 @@
 
     <bean name="termInsurance" class="co.pragra.learning.first_spring_proj.dec14.domain.TermInsurance"></bean>
     <bean name="autoInsurance" class="co.pragra.learning.first_spring_proj.dec14.domain.AutoInsurance"></bean>
+
     <bean name="insuranceService" class="co.pragra.learning.first_spring_proj.dec14.service.BaseInsuranceService">
-        <constructor-arg name="insurance" ref="termInsurance"></constructor-arg>
+        <constructor-arg name="insurance" ref="autoInsurance"></constructor-arg>
+    </bean>
+
+    <bean name="person" class="co.pragra.learning.first_spring_proj.dec14.domain.Person">
+        <constructor-arg name="firstName" value="Anmol"></constructor-arg>
+        <constructor-arg name="age" value="30"></constructor-arg>
+        <constructor-arg name="income" value="100000"></constructor-arg>
+
     </bean>
 </beans>
