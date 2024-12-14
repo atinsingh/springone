@@ -10,10 +10,18 @@
         <constructor-arg name="insurance" ref="autoInsurance"></constructor-arg>
     </bean>
 
-    <bean name="person" class="co.pragra.learning.first_spring_proj.dec14.domain.Person">
+    <bean name="person"  class="co.pragra.learning.first_spring_proj.dec14.domain.Person">
         <constructor-arg name="firstName" value="Anmol"></constructor-arg>
         <constructor-arg name="age" value="30"></constructor-arg>
         <constructor-arg name="income" value="100000"></constructor-arg>
+        <property name="hobbies">
+            <list>
+                <value>Gym</value>
+                <value>Reading</value>
+                <value>Netflix</value>
+            </list>
+        </property>
 
     </bean>
+
 </beans>
